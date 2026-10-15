@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#faf7f5" />
+  <title>Symptom Check | SUGAMYA</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a href="../index.html" class="brand">
+      <span class="brand-icon">✿</span>
+      SUGAMYA
+    </a>
+    <span class="nav-caption">Women's Health Companion</span>
+  </header>
+
+  <main class="layout">
+    <section class="intro">
+      <span class="eyebrow">YOUR HEALTH, YOUR UNDERSTANDING</span>
+      <h1>Let's talk about<br />how you're feeling.</h1>
+      <p>
+        Your symptoms matter. Answer a few simple questions
+        to explore possible explanations and understand
+        what steps you could take next.
+      </p>
+      <div class="privacy-note">
+        <span>♡</span>
+        A safe space to share, without judgment.
+      </div>
+    </section>
+
+    <section class="quiz-card">
+      <div class="progress-info">
+        <span id="step-label">QUESTION 1 OF 5</span>
+        <span id="progress-label">20%</span>
+      </div>
+
+      <div class="progress-track">
+        <div id="progress-bar"></div>
+      </div>
+
+      <form id="quiz-form">
+        <div id="question-container"></div>
+
+        <p id="error-message" class="error" role="alert"></p>
+
+        <div class="actions">
+          <button id="back-btn" class="btn btn-back"
+            type="button" hidden>
+            ← Back
+          </button>
+          <button id="next-btn" class="btn btn-next" type="submit">
+            Continue →
+          </button>
+        </div>
+      </form>
+
+      <p class="disclaimer">
+        SUGAMYA provides educational information, not a diagnosis.
+        It does not replace advice from a qualified healthcare professional.
+      </p>
+    </section>
+  </main>
+
+  <footer>Made with care ♡ · SUGAMYA</footer>
+</body>
+</html>
