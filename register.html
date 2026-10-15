@@ -9,6 +9,41 @@
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
+    
+<!-- Google Translate Button -->
+<div id="google_translate_button"></div>
+
+<style>
+  #google_translate_button {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+    background: white;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+</style>
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,kn,ta,te,ml,mr,bn,gu,es,fr,de,ar',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      },
+      'google_translate_button'
+    );
+  }
+</script>
+
+<script
+  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+</body>
 
     <div class="register-box">
 
