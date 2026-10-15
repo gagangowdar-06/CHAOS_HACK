@@ -1,0 +1,277 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eee6f8, #fdf7fb);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    color: #302044;
+}
+
+.register-box {
+    width: 100%;
+    max-width: 460px;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(60, 35, 80, 0.12);
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #7257a8;
+    margin-bottom: 8px;
+}
+
+.tagline {
+    text-align: center;
+    color: #777;
+    margin-bottom: 28px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 17px 0 8px;
+}
+
+input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d5cce2;
+    border-radius: 9px;
+    font-size: 14px;
+    background: white;
+    color: #302044;
+}
+
+input:focus {
+    outline: 3px solid #c7b4e6;
+    border-color: #7257a8;
+}
+
+input[aria-invalid="true"] {
+    border-color: #b42318;
+}
+
+.password-box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.password-box input {
+    flex: 1;
+    min-width: 0;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.show-btn {
+    padding: 12px 8px;
+    border: none;
+    border-radius: 7px;
+    background: #f0eafa;
+    color: #563b88;
+}
+
+.hint {
+    display: block;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #68647d;
+}
+
+.verification-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.verification-heading label {
+    margin-bottom: 8px;
+}
+
+#sendCode {
+    padding: 8px 12px;
+    background: #f0eafa;
+    color: #563b88;
+    border: 1px solid #d9cbed;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#sendCode:hover {
+    background: #e7dcf6;
+}
+
+.terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.terms input {
+    margin-top: 3px;
+    accent-color: #7257a8;
+    flex-shrink: 0;
+    width: 17px;
+    height: 17px;
+}
+
+.terms span {
+    font-size: 13px;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 22px;
+    border: none;
+    border-radius: 10px;
+    background: #7257a8;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.register-btn:hover {
+    background: #594080;
+}
+
+.error {
+    display: block;
+    color: #b42318;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.info {
+    display: block;
+    color: #594080;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 7px;
+}
+
+#formMessage {
+    margin-top: 12px;
+    font-size: 13px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+#formMessage:empty {
+    display: none;
+}
+
+#formMessage.success {
+    color: #205c3b;
+    background: #eaf6ef;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#formMessage.error-message {
+    color: #a32118;
+}
+
+.login-link {
+    text-align: center;
+    font-size: 14px;
+    color: #68647d;
+    margin-top: 24px;
+    line-height: 1.7;
+}
+
+.login-link a {
+    color: #7257a8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.disclaimer {
+    margin-top: 22px;
+    padding: 13px;
+    background: #f5f0fb;
+    border-radius: 9px;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #514664;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+    font-size: 12px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+    outline: 3px solid #9b83d3;
+    outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 14px;
+        align-items: flex-start;
+    }
+
+    .register-box {
+        padding: 25px 20px;
+        margin: auto 0;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}

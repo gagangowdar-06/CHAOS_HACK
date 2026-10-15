@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="sugamya.jpeg" type="image/x-icon">
+    <title>SUGAMYA Login</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="login-box">
+
+        <h1>SUGAMYA</h1>
+        <p class="tagline">Your health, your language.</p>
+
+        <h2>Welcome Back!</h2>
+        <p class="subtitle">Login to your account</p>
+
+        <!-- Email -->
+        <form id="loginForm">
+
+            <label for="email">Email or Username</label>
+            <input type="text" id="email"
+                   placeholder="Enter your email" required>
+
+            <!-- Password -->
+            <label for="password">Password</label>
+
+            <div class="password-box">
+                <input type="password" id="password"
+                       placeholder="Enter your password" required>
+
+                <button type="button" id="showPassword">Show</button>
+            </div>
+
+            <p class="forgot">
+                <a href="#" id="forgotPassword">Forgot Password?</a>
+            </p>
+
+            <!-- Login button -->
+            <button type="submit" class="login-btn">Log In</button>
+
+            <p id="message" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="divider">OR</div>
+
+        <!-- Google Login -->
+        <button type="button" class="google-btn" id="googleLogin">
+            <span class="google-logo">G</span>
+            Continue with Google
+        </button>
+
+        <!-- Phone Login -->
+        <button type="button" class="phone-btn" id="phoneLogin">
+            📱 Log in with Phone Number (OTP)
+        </button>
+
+        <!-- Phone number section -->
+        <div id="phoneSection" hidden>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone"
+                   placeholder="Enter your phone number">
+
+            <button type="button" class="login-btn" id="sendOTP">
+                Continue
+            </button>
+
+            <p id="phoneMessage" role="status" aria-live="polite"></p>
+        </div>
+
+        <!-- Sign Up -->
+        <p class="signup">
+            Don't have an account?
+            
+            <a href="register.html">Signup</a>
+        </p>
+
+        <!-- Language selection -->
+        <label for="language">Choose Language</label>
+        <select id="language">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="ta">தமிழ்</option>
+            <option value="te">తెలుగు</option>
+            <option value="es">Español</option>
+        </select>
+
+        <!-- Medical Disclaimer -->
+        <div class="disclaimer">
+            <strong>Important:</strong> SUGAMYA provides informational
+            guidance based on your descriptions. We do not provide medical
+            diagnoses. Always consult a healthcare professional for medical advice.
+        </div>
+
+        <footer>
+            © 2026 SUGAMYA
+        </footer>
+
+    </div>
+
+    <!-- Connect JavaScript file -->
+    <script src="login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,273 @@
+
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eee6f8, #fdf7fb);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+}
+
+/* Center login box */
+.login-box {
+    background: white;
+    width: 100%;
+    max-width: 430px;
+
+    padding: 35px;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 35px rgba(60, 35, 80, 0.12);
+
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    color: #7257a8;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.tagline {
+    color: #777;
+    margin-bottom: 28px;
+}
+
+h2 {
+    color: #302044;
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Form labels */
+label {
+    display: block;
+    text-align: left;
+    margin: 15px 0 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #302044;
+}
+
+/* Input boxes */
+input,
+select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d5cce2;
+    border-radius: 9px;
+    font-size: 14px;
+    background: white;
+}
+
+input:focus,
+select:focus {
+    outline: 3px solid #c7b4e6;
+    border-color: #7257a8;
+}
+
+/* Password input and Show button */
+.password-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.password-box input {
+    min-width: 0;
+}
+
+.password-box button {
+    padding: 12px 8px;
+    border: none;
+    border-radius: 7px;
+    background: #f0eafa;
+    color: #563b88;
+    cursor: pointer;
+}
+
+/* Forgot password */
+.forgot {
+    text-align: right;
+    margin: 12px 0 20px;
+}
+
+a {
+    color: #7257a8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Main login button */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background: #7257a8;
+    color: white;
+
+    border: none;
+    border-radius: 9px;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #594080;
+}
+
+/* OR divider */
+.divider {
+    margin: 22px 0;
+    color: #888;
+    font-size: 13px;
+}
+
+/* Google button */
+.google-btn {
+    width: 100%;
+    padding: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: white;
+    color: #333;
+
+    border: 1px solid #d5cce2;
+    border-radius: 9px;
+
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.google-btn:hover {
+    background: #f8f5fc;
+}
+
+.google-logo {
+    color: #4285F4;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Phone button */
+.phone-btn {
+    width: 100%;
+    padding: 13px;
+    margin-top: 12px;
+
+    background: #f1eafa;
+    color: #563b88;
+
+    border: 1px solid #e0d3f2;
+    border-radius: 9px;
+
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.phone-btn:hover {
+    background: #e7dcf6;
+}
+
+/* Signup section */
+.signup {
+    margin: 22px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.signup a {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* Language dropdown */
+select {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+/* Medical disclaimer */
+.disclaimer {
+    margin-top: 22px;
+    padding: 13px;
+
+    background: #f5f0fb;
+    border-radius: 9px;
+
+    text-align: left;
+    color: #514664;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* Status messages */
+#message,
+#phoneMessage {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #563b88;
+    overflow-wrap: anywhere;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    color: #888;
+    font-size: 12px;
+}
+
+/* Keyboard accessibility */
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #9b83d3;
+    outline-offset: 3px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+        align-items: flex-start;
+    }
+
+    .login-box {
+        padding: 25px 20px;
+        margin: auto 0;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
