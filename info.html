@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Health Library – SUGAMYA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="info.css">
+<link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="index.html"><img src="favicon.jpeg" alt="logo" id="logo">SUGAMYA</a>
+    <nav aria-label="Main">
+      <a href="home.html">HOME</a>
+      <a href="library.html" aria-current="page" style="color:var(--ink);font-weight:600">Library</a>
+      <a href="info.html">Health Library</a>
+      <a href="quiz/index.html">Take a Quick Health Survey</a>
+    </nav>
+  </header>
+
+  <main>
+    
+<section class="who-section" id="who-health">
+    <h2>Trusted Health Information</h2>
+
+    <p>
+        Explore reliable health information from the
+        World Health Organization (WHO).
+    </p>
+
+    <div class="who-grid">
+        <article class="who-card">
+            <h3>Women's Health</h3>
+            <p>
+                Explore reproductive health and other
+                women's health topics.
+            </p>
+            <a href="https://www.who.int/health-topics/sexual-health"
+               target="_blank"
+               rel="noopener noreferrer">
+                Read WHO information
+            </a>
+        </article>
+
+        <article class="who-card">
+            <h3>PCOS and Hormonal Health</h3>
+            <p>
+                Learn about women's health and related
+                conditions from trusted health resources.
+            </p>
+            <a href="https://www.who.int/health-topics"
+               target="_blank"
+               rel="noopener noreferrer">
+                Explore WHO health topics
+            </a>
+        </article>
+
+        <article class="who-card">
+            <h3>Mental Health</h3>
+            <p>
+                Explore information about mental health
+                and emotional well-being.
+            </p>
+            <a href="https://www.who.int/health-topics/mental-health-strengthening-our-response"
+               target="_blank"
+               rel="noopener noreferrer">
+                Read WHO information
+            </a>
+        </article>
+    </div>
+
+    <p class="who-note">
+        Source: World Health Organization (WHO).
+        This information is educational and does not replace
+        advice from a qualified healthcare professional.
+    </p>
+</section>
+
+    <div class="lib-head">
+      <h1>Health library</h1>
+      <p class="lead">Short, plain-language guides on PCOS, periods and related symptoms. Search a topic or pick a category.</p>
+      <div class="search">
+        <label for="q" class="sr">Search the library</label>
+        <input id="q" type="search" placeholder="Search, for example “irregular periods” or “acne”" autocomplete="off">
+      </div>
+      <div class="chips" id="cats" role="group" aria-label="Filter by category"></div>
+      <p id="count" class="count" aria-live="polite"></p>
+    </div>
+
+    <div class="lib-grid" id="grid"></div>
+    <div id="empty" class="card" hidden><h3>No guides found</h3><p>Try a shorter search or choose “All”.</p></div>
+
+    <section id="glossary" class="gloss">
+      <h2>Quick glossary</h2>
+      <dl id="gl"></dl>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Important:</strong> This library is an information resource. It does not diagnose, prescribe or replace a qualified doctor. Do not delay seeking care because of what you read here.</p>
+  </footer>
+</div>
+
+<dialog id="reader" aria-labelledby="r-title">
+  <article>
+    <button class="btn ghost close" id="close" type="button" aria-label="Close article">✕ Close</button>
+    <p class="r-cat" id="r-cat"></p>
+    <h2 id="r-title"></h2>
+    <p class="r-meta" id="r-meta"></p>
+    <div id="r-body"></div>
+    <div class="card warn"><p style="margin:0">General information, not medical advice. If you are worried about your health, please talk to a doctor.</p></div>
+  </article>
+</dialog>
+
+<script src="info.js"></script>
+</body>
+</html>

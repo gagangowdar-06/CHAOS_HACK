@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SUGAMYA – Understand your symptoms</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home.css">
+<link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#"><img src="favicon.jpeg" alt="LOGO" id="logo">SUGAMYA</a>
+    <nav aria-label="Main"><a href="#how">How it works</a><a href="#pcos">About PCOS</a><a href="info.html">Getting care</a></nav>
+  </header>
+
+  <main>
+  <div class="hero" id="try">
+    <div>
+      <h1>Understand Today, Healthier Tomorrow</h1>
+      <p class="lead">Write or speak about your symptoms in the language you use at home. SUGAMYA explains what they can point to and which kind of doctor to see.</p>
+    </div>
+
+    <div class="tool">
+      <div class="row">
+        <label for="lang" class="sr">Language</label>
+        <select id="lang" aria-label="Language for voice input">
+          <option value="en-IN">English</option><option value="hi-IN">हिंदी</option><option value="kn-IN">ಕನ್ನಡ</option>
+          <option value="ta-IN">தமிழ்</option><option value="te-IN">తెలుగు</option><option value="mr-IN">मराठी</option><option value="bn-IN">বাংলা</option>
+        </select>
+        <button class="btn ghost" id="mic" type="button" aria-pressed="false">🎤 Speak</button>
+      </div>
+      <label for="symptoms">What are you experiencing?</label>
+      <textarea id="symptoms" placeholder="For example: my periods come every 2–3 months and I have acne on my chin…"></textarea>
+      <div class="chips" aria-label="Quick add">
+        <button class="chip" type="button">Irregular periods</button>
+        <button class="chip" type="button">Acne</button>
+        <button class="chip" type="button">Hair loss</button>
+        <button class="chip" type="button">Extra facial hair</button>
+        <button class="chip" type="button">Weight gain</button>
+        <button class="chip" type="button">Tiredness</button>
+        <button class="chip" type="button">Mood changes</button>
+      </div>
+      <button class="btn" id="go" type="button">Understand my symptoms</button>
+      <div id="result" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <section id="how">
+    <h2>How It Works</h2>
+    <div class="grid">
+      <div><h3>Reads everyday language</h3><p>Say “periods are late again” or write it in Hindi, Kannada, Tamil, Telugu, Marathi or Bengali. No medical words needed.</p></div>
+      <div><h3>Explains in plain terms</h3><p>You see which symptoms were noticed, what they are commonly linked to, and what is still unknown.</p></div>
+      <div><h3>Points to the right care</h3><p>You get the type of doctor to see, tests worth asking about, and signs that need urgent attention.</p></div>
+    </div>
+  </section>
+
+  <section id="pcos">
+    <div class="pcos">
+      <div>
+        <h2>PCOS, in short</h2>
+        <p style="color:white">Polycystic ovary syndrome (PCOS) is a common hormonal condition. Many people live with it for years before it is recognised, because the signs look different from person to person.</p>
+        <p style="color:white;margin-bottom:0">Only a doctor can confirm it, usually with a history, blood tests and sometimes an ultrasound.</p>
+      </div>
+      <div>
+        <h3>Signs that are often discussed</h3>
+        <ul>
+          <li>Periods that are infrequent, very irregular or absent</li>
+          <li>Acne or oily skin that keeps coming back</li>
+          <li>Thicker hair on the face, chest or belly</li>
+          <li>Thinning hair on the scalp</li>
+          <li>Weight gain, especially around the waist</li>
+          <li>Darker, velvety skin on the neck or underarms</li>
+        </ul>
+        <p style="color:white;font-size:.9rem">Other conditions, such as thyroid problems, can look similar.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="care" class="care">
+    <h2>When to see a doctor</h2>
+    <ol>
+      <li><strong>Soon (within a few weeks):</strong> periods missing for 3 months or more, cycles that keep changing, new acne or hair changes that bother you.</li>
+      <li><strong>Which doctor:</strong> a gynaecologist is a good start. An endocrinologist or dermatologist can help with hormone and skin concerns.</li>
+      <li><strong>Right away:</strong> very heavy bleeding, severe pelvic pain, fainting, or any chance of pregnancy with pain or bleeding. Go to the nearest emergency department.</li>
+    </ol>
+  </section>
+  </main>
+
+  <footer>
+    <p><strong>Important:</strong> SUGAMYA is an information tool. It does not diagnose, prescribe or replace a qualified doctor. Do not delay seeking care because of what you read here.</p>
+    <p>Your text stays in your browser on this page.</p>
+  </footer>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap footer-content">
+    <div class="footer-brand">
+      <a href="#" class="brand">YourBrand</a>
+      <p>Making information simple, accessible, and helpful for everyone.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3 class="heading">Quick Links</h3>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#care">Resources</a>
+      <a href="mailto:hello@example.com">Contact</a>
+    </div>
+
+    <div class="footer-links">
+      <h3>Follow Us</h3>
+      <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom wrap">
+    <p>&copy; <span id="current-year"></span> YourBrand. All rights reserved.</p>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("current-year").textContent =
+    new Date().getFullYear();
+</script>
+
+
+<script src="home.js"></script>
+</body>
+</html>
