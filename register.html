@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="sugamya.jpeg" type="image/x-icon">
+    <title>SUGAMYA - Create Account</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+    <div class="register-box">
+
+        <h1>SUGAMYA</h1>
+        <p class="tagline">Your health, your language.</p>
+
+        <h2>Create Account</h2>
+        <p class="subtitle">Join SUGAMYA and begin your health journey.</p>
+
+        <form id="registerForm" novalidate>
+
+            <!-- Mobile Number -->
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile"
+                   placeholder="Enter mobile number"
+                   autocomplete="tel" required>
+            <small id="mobileError" class="error"></small>
+
+            <!-- Email -->
+            <label for="email">Email Address</label>
+            <input type="email" id="email"
+                   placeholder="Enter your email address"
+                   autocomplete="email" required>
+            <small id="emailError" class="error"></small>
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <div class="password-box">
+                <input type="password" id="password"
+                       placeholder="Create a password"
+                       autocomplete="new-password" required>
+                <button type="button" class="show-btn"
+                        data-target="password">Show</button>
+            </div>
+            <small class="hint">Use at least 8 characters.</small>
+            <small id="passwordError" class="error"></small>
+
+            <!-- Confirm Password -->
+            <label for="confirmPassword">Confirm Password</label>
+            <div class="password-box">
+                <input type="password" id="confirmPassword"
+                       placeholder="Re-enter your password"
+                       autocomplete="new-password" required>
+                <button type="button" class="show-btn"
+                        data-target="confirmPassword">Show</button>
+            </div>
+            <small id="confirmError" class="error"></small>
+
+            <!-- Verification -->
+            <div class="verification-heading">
+                <label for="verificationCode">Verification Code</label>
+                <button type="button" id="sendCode">Send Code</button>
+            </div>
+
+            <input type="text" id="verificationCode"
+                   placeholder="Enter email or SMS code"
+                   inputmode="numeric" autocomplete="one-time-code"
+                   maxlength="10" required>
+
+            <small id="verificationMessage" class="info"
+                   role="status" aria-live="polite"></small>
+            <small id="verificationError" class="error"></small>
+
+            <!-- Terms -->
+            <label class="terms">
+                <input type="checkbox" id="agree">
+                <span>
+                    I agree to the Terms of Service and Privacy Policy.
+                </span>
+            </label>
+            <small id="termsError" class="error"></small>
+
+            <!-- Register -->
+            <button type="submit" class="register-btn">
+                Create Account
+            </button>
+
+            <p id="formMessage" role="status"
+               aria-live="polite"></p>
+
+        </form>
+
+        <p class="login-link">
+            Already have an account?
+            <a href="login.html">Log In</a>
+        </p>
+
+        <div class="disclaimer">
+            <strong>Important:</strong> SUGAMYA provides informational
+            guidance, not medical diagnoses. Always consult a healthcare
+            professional for medical advice.
+        </div>
+
+        <footer>© 2026 SUGAMYA</footer>
+
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
